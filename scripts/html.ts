@@ -14,7 +14,7 @@ $("/html") {
   absolutize()
   rewrite_aspnet_scripts()
   clean_mobile_meta_tags()
-  #remove_all_styles()
+  remove_all_styles()
 
   add_assets()
 
