@@ -38,8 +38,3 @@ You might find [the page about the scripts folder](http://developer.moovweb.com/
 If running `sudo moov server`, remember to put all domains you're going to hit in your etc/hosts if you run your server with the `-auto-hosts=false` option.
 
     127.0.0.1   mlocal.igadgetcommerce.com
-=======
-igadget
-=======
-
-for moovweb
