@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Moovweb Project
 Welcome to your Moovweb project! Moovweb is a great way to build a compelling new front-end presentation for an existing website. The files in this project describe the changes you want to make to the front end of a site. There are places in this project to add new images (assets/images/), styles (assets/stylesheets/) and even manipulate HTML (scripts/).
 
@@ -44,4 +43,3 @@ igadget
 =======
 
 for moovweb
->>>>>>> 3f0bac1612226d9494b4248618a930c0e40077bc
