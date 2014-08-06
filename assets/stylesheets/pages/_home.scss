@@ -15,17 +15,6 @@
         ul.ProductList {
             li {
                 padding: 20px;
-                .ProductActionAdd {
-                    background: url(../../images/ProductActionAdd.gif) no-repeat;
-                    background-size: cover;
-                    min-height: 25px;
-                    max-height: 25px;
-                    @include border-radius(8px);
-                    text-align: center;
-                    a {
-                        color: $color8;
-                    }
-                }
             }
         }
     }
