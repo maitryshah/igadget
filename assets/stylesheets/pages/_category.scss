@@ -1,0 +1,72 @@
+._category{
+	[data-ur-set="carousel"] {
+	  overflow: hidden;
+	  position: relative;
+	}
+	[data-ur-carousel-component="item"] {
+	  float: left;
+	}
+	#SideCategoryShopByPrice, #SideShopByBrand{
+		color:$color8;
+		margin: 10px;
+		border: $border3;
+		border-radius: 10px;
+		.mw_bar1{
+			@include background( linear-gradient(top, #852201, #6a1b00));
+			@include border-radius(10px);
+			padding: 5px;
+			margin: 0px;
+			&[data-ur-state="disabled"] {
+			  > .mw_indicator {
+			    @extend .sprites-plus;
+			    float: right;
+			    margin-right: 5px;
+			    margin-top: -25px;
+			  }
+			}
+			&[data-ur-state="enabled"] {
+			  > .mw_indicator {
+			    @extend .sprites-minus;
+			    float: right;
+			    margin-right: 5px;
+			    margin-top: -25px;
+			  }
+			}	
+		}
+		
+	}
+	#CategoryContent{
+		ul{
+			li{
+				padding: 20px;
+			}
+		}
+	}
+	#CategoryHeading{
+		.BlockContent{
+			@include background( linear-gradient(top, #852201, #6a1b00));
+			color: $color8;
+			margin: 10px;
+			border: $border3;
+			@include border-radius(10px);
+			background: $color8;
+			    .SortBox{
+						@include background( linear-gradient(top, #852201, #6a1b00));
+						@include border-radius(10px);
+						padding: 5px;
+			    }
+				ul{
+					
+			        li {
+						list-style: none outside none;
+						margin: 2px;
+						padding: 5px;
+						border-bottom: $border3;
+					}
+					li:last-child{
+						border-bottom: none;
+					}
+				}
+		}	
+	}
+}

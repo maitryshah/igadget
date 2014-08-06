@@ -1,5 +1,44 @@
 // Every page should have a class on the body
 // Scope that in each file at the start
-.mw-home {
-  
+._body {
+    #LayoutColumn1 {
+        display: none;
+    }
+    [data-ur-set="carousel"] {
+        overflow: hidden;
+        position: relative;
+    }
+    [data-ur-carousel-component="item"] {
+        float: left;
+    }
+    .BlockContent {
+        ul.ProductList {
+            li {
+                padding: 20px;
+                .ProductActionAdd {
+                    background: url(../../images/ProductActionAdd.gif) no-repeat;
+                    background-size: cover;
+                    min-height: 25px;
+                    max-height: 25px;
+                    @include border-radius(8px);
+                    text-align: center;
+                    a {
+                        color: $color8;
+                    }
+                }
+            }
+        }
+    }
+    .Content {
+        #HomeFeaturedProducts {
+            h2 {
+                text-align: center;
+            }
+        }
+        #HomeNewProducts {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
 }

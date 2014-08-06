@@ -1,0 +1,45 @@
+.zoomWrapperImage{
+	display: none !important;
+}
+._product{
+	#LayoutColumn2{
+		text-align: center;
+	}
+	.ProductMain{
+		margin-bottom: 30px;
+		border: $border2;
+		.ProductDetailsGrid{
+			.DetailRow>div {
+			   display: inline-block;
+			}						
+		}
+	    .DetailRow{
+	    	margin-bottom: 10px;
+	    	.quantityInput{
+				padding: 6px;
+				margin: 2px 5px;
+	    	}
+			.BulkDiscount{
+				float: left;
+				margin-top: 10px;
+				.cartbtn{
+					@include background( linear-gradient(top, #852201, #6a1b00));
+					@include border-radius(5px);
+					padding-left: 100px;
+					padding-right: 100px;
+					color:$color8;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					margin-left: 15px;
+				}   
+			}
+		}
+    }
+	.ProductDescription{
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	#ProductReviews{
+		font-size: 14px;
+	}	
+}
