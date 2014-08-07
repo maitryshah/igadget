@@ -30,28 +30,6 @@
 	        }
 	      }
 	    }
-		.mw_bar1{
-			@include background( linear-gradient(top, #852201, #6a1b00));
-			@include border-radius(10px);
-			padding: 5px;
-			margin: 0px;
-			&[data-ur-state="disabled"] {
-			  > .mw_indicator {
-			    @extend .sprites-plus;
-			    float: right;
-			    margin-right: 5px;
-			    margin-top: -25px;
-			  }
-			}
-			&[data-ur-state="enabled"] {
-			  > .mw_indicator {
-			    @extend .sprites-minus;
-			    float: right;
-			    margin-right: 5px;
-			    margin-top: -25px;
-			  }
-			}	
-		}
 		
 	}
 	#CategoryContent{
@@ -75,9 +53,8 @@
 						padding: 5px;
 			    }
 				ul{
-					
 			        li {
-						list-style: none outside none;
+						list-style: none;
 						margin: 2px;
 						padding: 5px;
 						border-bottom: $border3;

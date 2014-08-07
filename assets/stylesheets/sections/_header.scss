@@ -1,16 +1,4 @@
-.Wrapper{
-  margin: 0 auto;
-}
-.clearfix{
-	zoom: 1;
-}
-.clearfix:before, .clearfix:after{
-	content: "";
-	display: table;
-}
-.clearfix:after{
-	clear: both;
-}
+
 #Header {
   border-top: 1px solid black;
   #Logo {
@@ -76,8 +64,5 @@
       
     }
   }
-  
 }
-.Clear{
-	display: none;
-}
+

@@ -4,9 +4,8 @@
 	      	remove()
 	 }
 	 $("//*[@id='HomeFeaturedProducts']/div"){
-	 	attribute("data-ur-set" ,"carousel")
+	 	attribute("data-ur-set","carousel")
 	 	attribute("data-ur-infinite" ,"enabled")
-	 	attribute("data-ur-touch" ,"enabled")
 	 	insert("div", class: "mw_dot"){
 	 		attribute("data-ur-carousel-component", "dots")
 	 	}
@@ -14,6 +13,7 @@
 	 		attribute("data-ur-carousel-component","scroll_container")
 	 		$("./li"){
 	 			attribute("data-ur-carousel-component","item")
+	 			attribute("data-ur-state" ,"active")
 	 			$("./div[@class='QuickView']"){
 	 				attribute("style","border: 1px solid red;")
 	 			}
@@ -26,7 +26,6 @@
 	$("//*[@id='HomeNewProducts']/div"){
 	 	attribute("data-ur-set" ,"carousel")
 	 	attribute("data-ur-infinite" ,"enabled")
-	 	attribute("data-ur-touch" ,"enabled")
 	 	insert("div", class: "mw_dot ") {
 	 		attribute("data-ur-carousel-component" , "dots")
 	 	}
@@ -34,6 +33,7 @@
 	 		attribute("data-ur-carousel-component","scroll_container")
 	 		$("./li"){
 	 			attribute("data-ur-carousel-component","item")
+	 			attribute("data-ur-state" ,"active")
 	 		}
 	 	}
 	 }  

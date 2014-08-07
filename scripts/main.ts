@@ -1,5 +1,10 @@
 # The main file executed by Tritium. The start of all other files.
-
+$host {
+    capture(/(\w+)\..*/) {
+      $hostvar = $1
+    }
+  }
+  log($hostvar)
 
 match(inferred_content_type()) {
   with(/html/) {
