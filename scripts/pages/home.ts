@@ -5,7 +5,8 @@
 	 }
 	 $("//*[@id='HomeFeaturedProducts']/div"){
 	 	attribute("data-ur-set","carousel")
-	 	attribute("data-ur-autoscroll" ,"enabled")
+	 	attribute("data-ur-infinite" ,"enabled")
+	 	attribute("data-ur-fill" ,"2")
 	 	insert("div", class: "mw_dot"){
 	 		attribute("data-ur-carousel-component", "dots")
 	 	}
@@ -25,7 +26,8 @@
 	 }
 	$("//*[@id='HomeNewProducts']/div"){
 	 	attribute("data-ur-set" ,"carousel")
-	 	attribute("data-ur-autoscroll" ,"enabled")
+	 	attribute("data-ur-infinite" ,"enabled")
+	 	attribute("data-ur-fill" ,"2")
 	 	insert("div", class: "mw_dot") {
 	 		attribute("data-ur-carousel-component" , "dots")
 	 	}

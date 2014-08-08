@@ -65,37 +65,55 @@ hr {
 #AjaxLoading{
     display: none;
   }
-.mw_dot{
-  clear: both;
-}
 .QuickViewBtn{
     display: none !important;
 } 
-.ProductThumb{
+.ProductImage, .ProductThumb{
   margin: 0 auto;
 }
-.ProductDetails , .ProductPriceRating{
+.ProductDetails , .ProductPriceRating , .ProductActionAdd{
   text-align: center;
+
 }
-.ProductActionAdd {
-    background: url(../../images/ProductActionAdd.gif) no-repeat;
-    background-size: cover;
-    min-height: 25px;
-    max-height: 25px;
-    @include border-radius(8px);
+.ProductActionAdd{
+    margin-top: 10px;
+    a{
+    @include background( linear-gradient(top, #852201, #6a1b00));
+    @include border-radius(3px);
+    padding: 3px;
+    color:$color8;
     text-align: center;
-    a {
-        color: $color8;
     }
 }
 .Clear{
   display: none;
 }
-.mw_bar1{
-      @include background( linear-gradient(top, #852201, #6a1b00));
-      @include border-radius(10px);
+#Menu{
+  @include border-radius(0px);
+  color: #000;
+  background: white;
+  text-align: center;
+  h2{
+    background: $color7;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $color8;
+    padding: 5px;
+  }
+  li{
+    border-bottom: $border2;
+    background: $color9;
+    padding: 5px;
+  }
+  a{
+    color: #000;
+  }
+}
+.mw_bar1 {
       padding: 5px;
       margin: 0px;
+      @include border-radius(10px);
+      @include background( linear-gradient(top, #852201, #6a1b00));
       &[data-ur-state="disabled"] {
         > .mw_indicator {
           @extend .sprites-plus;
@@ -112,5 +130,5 @@ hr {
           margin-top: -25px;
         }
       } 
-    }
+    } 
     

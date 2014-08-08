@@ -1,3 +1,9 @@
+[data-ur-tabs-component="content"] {
+  display: none;
+}
+[data-ur-tabs-component="content"][data-ur-state="enabled"] {
+  display: block;
+}
 ._category{
 	[data-ur-set="carousel"] {
 	  overflow: hidden;
@@ -6,6 +12,10 @@
 	[data-ur-carousel-component="item"] {
 	  float: left;
 	}
+	[data-ur-carousel-component="scroll_container"] {
+       clear: both;
+       display: inline-block;
+    }  
 	#SideCategoryShopByPrice, #SideShopByBrand{
 		color:$color8;
 		margin: 10px;
